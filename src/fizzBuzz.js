@@ -31,4 +31,13 @@ Fizzbuzz.prototype.isDivisibleByThree = function(number) {
    if(this.isDivisibleByFive(number)) {
      return "Buzz"
    }
+   else {
+     return number
+   }
  };
+
+var fizzbuzz = new Fizzbuzz()
+
+for(var i = 1; i <= 100; i++){
+  console.log(fizzbuzz.says(i));
+}
